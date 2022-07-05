@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище LombardModelContainer" CdmEntityContainer="LombardEntities">
+    <EntitySetMapping Name="Clienty">
+      <EntityTypeMapping TypeName="LombardModel.Clienty">
+        <MappingFragment StoreEntitySet="Clienty">
+          <ScalarProperty Name="ID_Clienta" ColumnName="ID_Clienta" />
+          <ScalarProperty Name="Familia" ColumnName="Familia" />
+          <ScalarProperty Name="Imya" ColumnName="Imya" />
+          <ScalarProperty Name="Otchestvo" ColumnName="Otchestvo" />
+          <ScalarProperty Name="Nomer_telefona" ColumnName="Nomer telefona" />
+          <ScalarProperty Name="Seria_pasporta" ColumnName="Seria pasporta" />
+          <ScalarProperty Name="Nomer_pasporta" ColumnName="Nomer pasporta" />
+          <ScalarProperty Name="Kem_vydan_pasport" ColumnName="Kem vydan pasport" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Platez">
+      <EntityTypeMapping TypeName="LombardModel.Platez">
+        <MappingFragment StoreEntitySet="Platez">
+          <ScalarProperty Name="ID_Tovar" ColumnName="ID_Tovar" />
+          <ScalarProperty Name="Summa" ColumnName="Summa" />
+          <ScalarProperty Name="Kraynyaya_data_plateza" ColumnName="Kraynyaya_data_plateza" />
+          <ScalarProperty Name="Facticheskaya_data_plateza" ColumnName="Facticheskaya_data_plateza" />
+          <ScalarProperty Name="Sotrudnik" ColumnName="Sotrudnik" />
+          <ScalarProperty Name="Status_plateza" ColumnName="Status_plateza" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prodaza">
+      <EntityTypeMapping TypeName="LombardModel.Prodaza">
+        <MappingFragment StoreEntitySet="Prodaza">
+          <ScalarProperty Name="ID_Prodazy" ColumnName="ID_Prodazy" />
+          <ScalarProperty Name="Tovary" ColumnName="Tovary" />
+          <ScalarProperty Name="Data_prodazy" ColumnName="Data prodazy" />
+          <ScalarProperty Name="Stoimost" ColumnName="Stoimost" />
+          <ScalarProperty Name="Sotrudnik" ColumnName="Sotrudnik" />
+          <ScalarProperty Name="Client" ColumnName="Client" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sotrudniki">
+      <EntityTypeMapping TypeName="LombardModel.Sotrudniki">
+        <MappingFragment StoreEntitySet="Sotrudniki">
+          <ScalarProperty Name="ID_Sotrudnik" ColumnName="ID_Sotrudnik" />
+          <ScalarProperty Name="Sotrudnik" ColumnName="Sotrudnik" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="LombardModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tovary">
+      <EntityTypeMapping TypeName="LombardModel.Tovary">
+        <MappingFragment StoreEntitySet="Tovary">
+          <ScalarProperty Name="ID_Tovara" ColumnName="ID_Tovara" />
+          <ScalarProperty Name="Nazvanie" ColumnName="Nazvanie" />
+          <ScalarProperty Name="Tip" ColumnName="Tip" />
+          <ScalarProperty Name="Data_sdachi" ColumnName="Data sdachi" />
+          <ScalarProperty Name="Ocenochnaya_Stoimost" ColumnName="Ocenochnaya Stoimost" />
+          <ScalarProperty Name="Sotrydnik" ColumnName="Sotrydnik" />
+          <ScalarProperty Name="Symma_pod_zalog" ColumnName="Symma pod zalog" />
+          <ScalarProperty Name="Symma_vykupa" ColumnName="Symma vykupa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="LombardModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+          <ScalarProperty Name="ID_Sotrudnik" ColumnName="ID_Sotrudnik" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5d5cfab88e3b4de08e682c97407b27a3" Name="Diagram1">
+        <EntityTypeShape EntityType="LombardModel.Clienty" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LombardModel.Platez" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LombardModel.Prodaza" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LombardModel.Sotrudniki" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LombardModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LombardModel.Tovary" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LombardModel.User" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="LombardModel.FK_Prodaza_Clienty" ManuallyRouted="false" />
+        <AssociationConnector Association="LombardModel.FK_Prodaza_Platez" ManuallyRouted="false" />
+        <AssociationConnector Association="LombardModel.FK_Prodaza_Tovary" ManuallyRouted="false" />
+        <AssociationConnector Association="LombardModel.FK_User_Prodaza" ManuallyRouted="false" />
+        <AssociationConnector Association="LombardModel.FK_User_Sotrudniki" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
